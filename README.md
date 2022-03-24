@@ -6,9 +6,13 @@ The main reason I chose PPO is that continuous action is fundamentally how vehic
 This project is adapted from:
 https://github.com/bitsauce/Carla-ppo
 
+As seen below, the most significant experiment observation is value misalignment between the developer and the agent. Car continously driving on the road and pavement.
+
+
+
 My own adaptations include:
 1) A script to view spawn points in an environment and see what a potential route would be.
-2) A script to collect training data (no HUD)
+2) A script to collect image training data for perception. (no HUD)
 3) Script for a Convolutional Variational Auto-Encoder (not adapted)
 4) Script that interleaves training between two environments, lap environment and route environment. 
 5) Environments script that contains settings for lap and route environment. Alongside essential functions for the agents custom "YUV" colour space. Then feeding back sensor data from the IMU sensor and lidar sensor. 
